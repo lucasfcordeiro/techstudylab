@@ -35,7 +35,7 @@ a {
     line-height: 1em;
     font-size: 0.8em;
 }
-.header-right {padding: 0 2em;font-size: 0.9em;float: right;}
+.header-right {font-size: 0.9em;float: right;padding-right: 2em;}
 
 
 .feed-title-container {
@@ -47,6 +47,7 @@ a {
     text-align: center;
     margin: 0 auto;
     margin-top: 4em;
+    padding: 0 1em;
 }
 .feed-title {
         /* display: inline-block; */
@@ -59,7 +60,8 @@ a {
 }
 .feed-list {
         max-width: 800px;
-    margin: 0 auto;
+        margin: 0 auto;
+        padding: 0 1em;
 }
 .feed-item{
     padding: 20px 0 0px;
