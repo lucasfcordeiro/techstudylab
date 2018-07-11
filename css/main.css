@@ -1,11 +1,28 @@
-body, html {
+/*body, html {
     padding: 0;
     margin: 0;
     line-height: 1.625;
     font-size: 16px;
     font-family: "Open Sans",sans-serif;
     background-color: #fff;
+}*/
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: #f9f9f9;
+    color: #2d2d2d;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.625;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    overflow-x: hidden;
 }
+
+
 a {
     text-decoration: none;
 }
@@ -35,7 +52,7 @@ a {
     line-height: 1em;
     font-size: 0.8em;
 }
-.header-right {font-size: 0.9em;float: right;padding-right: 2em;}
+.header-right {font-size: 0.9em;float: right;padding-right: 2em;cursor: pointer;}
 
 
 .feed-title-container {
@@ -71,6 +88,7 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: flex;
+    cursor: pointer;
 }
 .item-title{
     letter-spacing: -.5px;
@@ -97,6 +115,10 @@ a {
     font-weight: 700;
 }
 
+.dev-tag-artigo{
+    font-size: 0.7rem;
+}
+
 .title-container{
     display: block;
     margin: auto 0;
@@ -108,9 +130,85 @@ a {
     font-size: 15px;
     border-radius: 3px;
     background-color: #efefef;
+    display:  none;
 }
 
 .load-more-results-container {
     text-align: center;
     margin-top: 60px;
 }
+
+.blog .post, .blog.list {
+    padding: 0 1em;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.blog .post .title {
+    width: 90%;
+    text-align: center;
+    margin: 2em auto 2em auto;
+}
+.blog .post .title h1 {
+    margin: 1em 0 .2em 0;
+}
+
+.blog .title h1 {
+    margin: 1em 0;
+    padding: 0;
+    font-family: Montserrat,"Open Sans",sans-serif;
+    font-weight: 400;
+    color: #4d4d4d;
+}
+.blog .post h2, .blog .post h3 {
+    border-left: 2px #4d4d4d solid;
+    padding-left: .5em;
+    max-width: 60%;
+    margin: 1em 0;
+    font-family: Montserrat,"Open Sans",sans-serif;
+    font-weight: 400;
+    color: #4d4d4d;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 70%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}f
+
