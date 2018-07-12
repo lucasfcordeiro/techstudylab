@@ -8,7 +8,7 @@
 }*/
 
 *, ::after, ::before {
-    box-sizing: unset!important;
+    /* box-sizing: unset!important; */
 }
 a:hover {
     text-decoration: none!important;
