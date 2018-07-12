@@ -10,9 +10,14 @@
 *, ::after, ::before {
     /* box-sizing: unset!important; */
 }
-a:hover {
+a {
     text-decoration: none!important;
+    color: #00b2ee;
 }
+
+ 
+
+
 
 body, html {
     padding: 0;
@@ -59,7 +64,7 @@ a {
     line-height: 1em;
     font-size: 0.8em;
 }
-.header-right {font-size: 0.9em;float: right;padding-right: 2em;cursor: pointer;}
+.header-right {font-size: 0.9em;float: right;padding-right: 2em;cursor: pointer;color: #4d4d4d;}
 
 
 .feed-title-container {
